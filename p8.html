@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Magazine Subscription Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    table {
+      background: white;
+      border-collapse: collapse;
+      width: 500px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    caption {
+      background: #c00;
+      color: white;
+      font-size: 1.2em;
+      padding: 12px;
+      text-align: left;
+    }
+    td {
+      padding: 8px 12px;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 6px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    td.options {
+      vertical-align: top;
+    }
+    .submit-row {
+      text-align: center;
+      padding: 12px;
+    }
+    .btn-submit {
+      background: #c00;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-submit:hover {
+      background: #900;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="#" method="POST">
+    <table>
+      <caption>Yes! I Want to Subscribe to Mag‑O‑Zine</caption>
+      <tr>
+        <td>First Name:</td>
+        <td><input type="text" name="firstname" required></td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td><input type="text" name="lastname" required></td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><textarea name="address" rows="3" required></textarea></td>
+      </tr>
+      <tr>
+        <td>City:</td>
+        <td><input type="text" name="city" size="15" required></td>
+      </tr>
+      <tr>
+        <td>State:</td>
+        <td><input type="text" name="state" size="15" required></td>
+      </tr>
+      <tr>
+        <td>Zip:</td>
+        <td><input type="text" name="zip" size="10" required></td>
+      </tr>
+      <tr>
+        <td>Subscribe For:</td>
+        <td class="options">
+          <label><input type="checkbox" name="duration" value="1yr"> 1 Year ($19.95)</label><br>
+          <label><input type="checkbox" name="duration" value="2yr"> 2 Years ($35.00)</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Send me more info about:</td>
+        <td class="options">
+          <label><input type="checkbox" name="topics" value="computer"> Computer Zine</label><br>
+          <label><input type="checkbox" name="topics" value="fishing"> Fishing Zine</label><br>
+          <label><input type="checkbox" name="topics" value="cat"> Cat O Zine</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="submit-row">
+          <button type="submit" class="btn-submit">Submit</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>

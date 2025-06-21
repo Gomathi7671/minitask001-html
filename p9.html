@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form with Default Values</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 40px;
+    }
+
+    .form-container {
+      background: #fff;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group input[type="number"],
+    .form-group input[type="date"],
+    .form-group input[type="color"],
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .form-group .inline {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .form-group input[type="checkbox"],
+    .form-group input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background: #28a745;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Form with Default Values</h2>
+    <form>
+      <div class="form-group">
+        <label>Full Name:</label>
+        <input type="text" name="fullname" value="John Doe">
+      </div>
+
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" name="email" value="john@example.com">
+      </div>
+
+      <div class="form-group">
+        <label>Password:</label>
+        <input type="password" name="password" value="123456">
+      </div>
+
+      <div class="form-group">
+        <label>Age:</label>
+        <input type="number" name="age" value="25">
+      </div>
+
+      <div class="form-group">
+        <label>Gender:</label>
+        <label class="inline"><input type="radio" name="gender" value="male" checked> Male</label>
+        <label class="inline"><input type="radio" name="gender" value="female"> Female</label>
+      </div>
+
+      <div class="form-group">
+        <label>Subscribe:</label>
+        <label class="inline"><input type="checkbox" name="subscribe" checked> Yes</label>
+      </div>
+
+      <div class="form-group">
+        <label>Country:</label>
+        <select name="country">
+          <option value="us">USA</option>
+          <option value="in" selected>India</option>
+          <option value="uk">UK</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Comments:</label>
+        <textarea name="comments" rows="4">This is a default comment.</textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" value="2000-01-01">
+      </div>
+
+      <div class="form-group">
+        <label>Favorite Color:</label>
+        <input type="color" name="favcolor" value="#00ff00">
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

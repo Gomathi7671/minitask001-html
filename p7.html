@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Form Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #f0f2f5;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: #fff;
+      width: 350px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .card h2 {
+      margin-bottom: 15px;
+      font-size: 1.4em;
+      color: #333;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 18px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      color: #555;
+      font-weight: bold;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group select {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+    .radio-group {
+      display: flex;
+      gap: 20px;
+      margin-top: 5px;
+    }
+    .radio-group label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #555;
+    }
+    .submit-btn {
+      width: 100%;
+      padding: 10px;
+      background: #007BFF;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Employee Registration</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input id="name" type="text" name="name" placeholder="e.g. John Doe" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input id="email" type="email" name="email" placeholder="e.g. john@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label>Employee Type</label>
+        <div class="radio-group">
+          <label><input type="radio" name="employee_type" value="salaried" required> Salaried</label>
+          <label><input type="radio" name="employee_type" value="own_business"> Own Business</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+          <option value="">Select department</option>
+          <option value="hr">Human Resources</option>
+          <option value="it">IT Department</option>
+          <option value="marketing">Marketing</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Input Types Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      padding: 40px;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .form-group input[type="checkbox"],
+    .form-group input[type="radio"],
+    .form-group input[type="range"] {
+      width: auto;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .form-group input[type="color"] {
+      padding: 0;
+      height: 40px;
+    }
+
+    .form-group .inline {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>All Input Types Form</h2>
+    <form>
+
+      <div class="form-group">
+        <label>Text:</label>
+        <input type="text" name="text" value="Default text">
+      </div>
+
+      <div class="form-group">
+        <label>Password:</label>
+        <input type="password" name="password" value="password123">
+      </div>
+
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" name="email" value="user@example.com">
+      </div>
+
+      <div class="form-group">
+        <label>Number:</label>
+        <input type="number" name="number" value="25">
+      </div>
+
+      <div class="form-group">
+        <label>Search:</label>
+        <input type="search" name="search" value="Find something">
+      </div>
+
+      <div class="form-group">
+        <label>Tel (Phone):</label>
+        <input type="tel" name="tel" value="123-456-7890">
+      </div>
+
+      <div class="form-group">
+        <label>URL:</label>
+        <input type="url" name="url" value="https://example.com">
+      </div>
+
+      <div class="form-group">
+        <label>Date:</label>
+        <input type="date" name="date" value="2025-01-01">
+      </div>
+
+      <div class="form-group">
+        <label>Time:</label>
+        <input type="time" name="time" value="12:00">
+      </div>
+
+      <div class="form-group">
+        <label>Week:</label>
+        <input type="week" name="week" value="2025-W01">
+      </div>
+
+      <div class="form-group">
+        <label>Month:</label>
+        <input type="month" name="month" value="2025-06">
+      </div>
+
+      <div class="form-group">
+        <label>Color:</label>
+        <input type="color" name="color" value="#ff6600">
+      </div>
+
+      <div class="form-group">
+        <label>File Upload:</label>
+        <input type="file" name="file">
+      </div>
+
+      <div class="form-group">
+        <label>Range:</label>
+        <input type="range" name="range" min="0" max="100" value="50">
+      </div>
+
+      <div class="form-group">
+        <label>Checkbox:</label>
+        <label class="inline"><input type="checkbox" name="subscribe" checked> Subscribe</label>
+      </div>
+
+      <div class="form-group">
+        <label>Radio:</label>
+        <label class="inline"><input type="radio" name="gender" value="male" checked> Male</label>
+        <label class="inline"><input type="radio" name="gender" value="female"> Female</label>
+      </div>
+
+      <div class="form-group">
+        <label>Select Dropdown:</label>
+        <select name="country">
+          <option value="india" selected>India</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Textarea:</label>
+        <textarea name="comments" rows="4">This is a default comment.</textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Hidden Input (not visible):</label>
+        <input type="hidden" name="hiddenValue" value="secret123">
+        <small>(This field is hidden)</small>
+      </div>
+
+      <input type="submit" value="Submit Form" class="submit-btn">
+
+    </form>
+  </div>
+
+</body>
+</html>
